@@ -28,6 +28,7 @@ public class AjouterChambreServelet extends HttpServlet {
         c.setNom(req.getParameter("nom"));
         c.setDisponibilte(Boolean.valueOf(req.getParameter("disponibilite")));
         req.setAttribute("chambre", c);
+        long hotelId=req.getParameter("")
         new ChambreService().ajouter(c);
     }
 

@@ -17,7 +17,7 @@
         <h1>Liste des chambre</h1>
         <table border="2px solid black">
             <c:forEach items="${listeChambres}" var="c">
-                <tr><td>${c.id}</td><td>${c.nom}</td><td>${c.disponibilte}</td></tr>
+                <tr><td>${c.id}</td><td>${c.nom}</td><td>${c.disponibilte}</td><td>${c.hotel.nom}</td></tr>
             </c:forEach>
         </table>
             <c:import url='_footer.jsp'></c:import>
