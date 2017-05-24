@@ -25,6 +25,7 @@ public class Chambre implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     String nom;
+    Double prix;
     boolean disponibilte;
     @ManyToOne
     @JoinColumn        
@@ -85,6 +86,14 @@ public class Chambre implements Serializable {
 
     public void setHotel(Hotel hotel) {
         this.hotel = hotel;
+    }
+
+    public Double getPrix() {
+        return prix;
+    }
+
+    public void setPrix(Double prix) {
+        this.prix = prix;
     }
     
 }

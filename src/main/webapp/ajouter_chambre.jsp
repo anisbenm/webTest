@@ -23,11 +23,12 @@
                 <label>Hotel </label>
                 <select name="idHotel">
                 <c:forEach items="${hotels}" var="h">
-                    <option value='${h.id}'>${h.nom}
-                    </option>    
-                </c:forEach>
+                    <option value='${h.id}'>${h.nom} </option>   
+                    
+                </c:forEach></select> 
 
-            </select> <br>
+
+            <br>
             <input type="submit" value="Ajouter"></input>
         </form>
         <c:import url='_footer.jsp'></c:import>
